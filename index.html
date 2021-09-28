@@ -89,7 +89,7 @@
           <span class="sidebar-text">Trash</span>
         </div>
       </div>
-      <div class="form-container">
+      <div class="form-container inactive-form">
         <form>
           <input class="note-text" type="text" placeholder="Take a note..." />
           <div class="form-actions">
@@ -112,7 +112,12 @@
       <div class="form-container active-form">
         <form>
           <input type="text" class="note-title" placeholder="Title" />
-          <input class="note-text" type="text" placeholder="Take a note..." />
+          <input
+            id="note-text"
+            class="note-text"
+            type="text"
+            placeholder="Take a note..."
+          />
           <div class="form-actions">
             <div class="icons">
               <div class="tooltip">
@@ -169,51 +174,7 @@
         </form>
       </div>
 
-      <div class="notes">
-        <div class="note">
-          <span class="material-icons check-circle">check_circle</span>
-          <div class="title">Title</div>
-          <div class="text">Text</div>
-          <div class="note-footer">
-            <div class="tooltip">
-              <span class="material-icons-outlined hover small-icon"
-                >add_alert</span
-              >
-              <span class="tooltip-text">Remind me</span>
-            </div>
-            <div class="tooltip">
-              <span class="material-icons-outlined hover small-icon"
-                >person_add</span
-              >
-              <span class="tooltip-text">Collaborator</span>
-            </div>
-            <div class="tooltip">
-              <span class="material-icons-outlined hover small-icon"
-                >palette</span
-              >
-              <span class="tooltip-text">Change Color</span>
-            </div>
-            <div class="tooltip">
-              <span class="material-icons-outlined hover small-icon"
-                >image</span
-              >
-              <span class="tooltip-text">Add Image</span>
-            </div>
-            <div class="tooltip">
-              <span class="material-icons-outlined hover small-icon"
-                >archive</span
-              >
-              <span class="tooltip-text">Archive</span>
-            </div>
-            <div class="tooltip">
-              <span class="material-icons-outlined hover small-icon"
-                >more_vert</span
-              >
-              <span class="tooltip-text">More</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="notes"></div>
 
       <div class="modal">
         <div class="modal-content">
@@ -283,5 +244,12 @@
         </div>
       </div>
     </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"
+      integrity="sha512-AvtLzKgbVcTZJ0QZ3nLJoTGN2wiE/emjebM9xneyqhtEBRTsNB+8oeQGkOmyOF+gnJd7k3Zvnghs9m6EuTpTEw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
   </body>
 </html>
