@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 
 }
+main {
+    display: block;
+    height: 100vh;
+}
 
 /* HOVER EFEECTS */
 
